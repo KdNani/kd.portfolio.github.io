@@ -1,235 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/8667420002.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <!--Navigation Section-->
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img class="logo" src="images/logo2.png">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/8667420002.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Navigation Section-->
+  <div id="header">
+    <div class="container">
+      <div>
+        <nav class="nav-fixed">
+          <img class="logo" src="images/logo3.png">
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            <ion-icon name="close-circle-outline" onclick="closemenu()"><span></ion-icon>
           </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <ion-icon name="menu-outline" onclick="openmenu()"></ion-icon>
         </nav>
-        <div class="header-text">
-          <p>Developer</p>
-          <h1>Hi, I'm <span>Kenneth Darel Donan</span> <br>Welcome to my Portfolio</h1>
-          <p class="quote">"When I wrote this code, only God and I understood what I did. Now only God knows."  ~Anonymous</p>
-        </div>
+      </div>
+      <div class="header-text">
+        <p class="developer">Developer</p>
+        <h1>Hi, I'm <span>Kenneth Darel Donan</span> <br>Welcome to my Portfolio</h1>
+        <p class="quote">"When I wrote this code, only God and I understood what I did. Now only God knows." ~Anonymous
+        </p>
       </div>
     </div>
+  </div>
 
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hello! I am a passionate and dedicated developer. With an entry-level foundation in programming languages such as Python, Java, PHP, Html, CSS, and Javascript. I constantly strive to expand my knowledge and stay updated with the latest developments in the tech industry. From designing user-friendly interfaces, I enjoy every aspect of the development process. I take pride in writing clean, scalable, and maintainable code and constantly seeking growth opportunities. As a developer, I am committed to delivering outstanding solutions that not only meet client requirements but also exceed expectations. I am excited to contribute to the ever-evolving landscape of technology, aiming to make a positive impact through creative and efficient software solutions.</p>
-                    <br>
-                    <hr>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('personal')">Personal</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('language')">Languages</p>
-                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="personal">
-                      <ul>
-                        <li><span>Address</span><br>Ligaya St. San Carlos, Binangonan, Rizal</li>
-                        <li><span>Birthday</span><br>April 14, 1999</li>
-                        <li><span>Citizenship</span><br>Filipino</li>
-                        <li><span>Status</span><br>Single</li>
-                      </ul>
-                    </div>
-                    <div class="tab-contents" id="skills">
-                      <ul>
-                        <li><span>UI Designer</span><br>Designing Web/App interface</li>
-                        <li><span>Backend Developer</span><br>Building and maintaining the server-side logic and infrastructure</li>
-                        <li><span>Web Development</span><br>Develop a responsive Web-based Application</li>
-                        <li><span>App Development</span><br>Develop an Application for Android</li>
-                      </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                      <ul>
-                        <li><span>Present</span><br>Eulogio 'Amang' Rodriguez Institute of Science and Technology</li>
-                        <li><span>2020</span><br>Trent Information First Technical Career Institute, Inc.</li>
-                        <li><span>2018</span><br>Don Jose M. Ynares Sr. Memorial National High School</li>
-                        <li><span>2013</span><br>Polytechnic College of La Union</li>
-                      </ul>
-                    </div>
-                    <div class="tab-contents" id="language">
-                      <ul>
-                        <li><span>Python</span><br>Currently learning Python and Django Framework</li>
-                        <li><span>Java</span><br>Developed a Pet Care service scheduling application for android</li>
-                        <li><span>Html, CSS, Javascript</span><br>Developed a web-based application for Cafe Leanne Reservation</li>
-                        <li><span>PHP</span><br>Used to connect the database with HTML and CSS</li>
-                      </ul>
-                    </div>
-                </div>
-            </div>
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpg">
         </div>
-    </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hello! I am a passionate and dedicated developer. With an entry-level foundation in programming languages
+            such as Python, Java, PHP, Html, CSS, and Javascript. I constantly strive to expand my knowledge and stay
+            updated with the latest developments in the tech industry. From designing user-friendly interfaces, I enjoy
+            every aspect of the development process. I take pride in writing clean, scalable, and maintainable code and
+            constantly seeking growth opportunities. As a developer, I am committed to delivering outstanding solutions
+            that not only meet client requirements but also exceed expectations. I am excited to contribute to the
+            ever-evolving landscape of technology, aiming to make a positive impact through creative and efficient
+            software solutions.</p>
+          <br>
+          <hr>
 
-    <!--Services Section-->
-    <div id="services">
-      <div class="container1">
-        <h1 class="sub-title">What I Do?</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-mobile"></i>
-            <h2>App Design</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima molestias necessitatibus possimus vero soluta facere, optio dicta? Blanditiis aperiam aliquid, nemo eum minus nostrum beatae voluptate doloribus amet, corrupti molestias!</p>
-            <a href="#">Learn more</a>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('personal')">Personal</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('language')">Languages</p>
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
           </div>
-
-          <div>
-            <i class="fa-solid fa-laptop"></i>
-            <h2>Web Design</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima molestias necessitatibus possimus vero soluta facere, optio dicta? Blanditiis aperiam aliquid, nemo eum minus nostrum beatae voluptate doloribus amet, corrupti molestias!</p>
-            <a href="#">Learn more</a>
+          <div class="tab-contents active-tab" id="personal">
+            <ul>
+              <li><span>Address</span><br>Ligaya St. San Carlos, Binangonan, Rizal</li>
+              <li><span>Birthday</span><br>April 14, 1999</li>
+              <li><span>Citizenship</span><br>Filipino</li>
+              <li><span>Status</span><br>Single</li>
+            </ul>
           </div>
-
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Backend</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima molestias necessitatibus possimus vero soluta facere, optio dicta? Blanditiis aperiam aliquid, nemo eum minus nostrum beatae voluptate doloribus amet, corrupti molestias!</p>
-            <a href="#">Learn more</a>
-          </div>    
-        </div>
-      </div>
-    </div>
-
-    <!--Works Section-->
-    <div id="portfolio">
-      <div class="container2">
-        <h1 class="sub-title">My Works</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/work1.png" alt="Work 1"/>
-            <div class="layer">
-              <h3>Pet Care App</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil odio expedita officia minima nisi.</p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><span>UI Designer</span><br>Designing Web/App interface</li>
+              <li><span>Backend Developer</span><br>Building and maintaining the server-side logic and infrastructure
+              </li>
+              <li><span>Web Development</span><br>Develop a responsive Web-based Application</li>
+              <li><span>App Development</span><br>Develop an Application for Android</li>
+            </ul>
           </div>
-
-          <div class="work">
-            <img src="images/work2.png" alt="Work 1"/>
-            <div class="layer">
-              <h3>Cafe Leanne Reservation</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil odio expedita officia minima nisi.</p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Present</span><br>Eulogio 'Amang' Rodriguez Institute of Science and Technology</li>
+              <li><span>2020</span><br>Trent Information First Technical Career Institute, Inc.</li>
+              <li><span>2018</span><br>Don Jose M. Ynares Sr. Memorial National High School</li>
+              <li><span>2013</span><br>Polytechnic College of La Union</li>
+            </ul>
           </div>
-
-          <div class="work">
-            <img src="images/work3.png" alt="Work 1"/>
-            <div class="layer">
-              <h3>EdTutor</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil odio expedita officia minima nisi.</p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
+          <div class="tab-contents" id="language">
+            <ul>
+              <li><span>Python</span><br>Currently learning Python and Django Framework</li>
+              <li><span>Java</span><br>Developed a Pet Care service scheduling application for android</li>
+              <li><span>Html, CSS, Javascript</span><br>Developed a web-based application for Cafe Leanne Reservation
+              </li>
+              <li><span>PHP</span><br>Used to connect the database with HTML and CSS</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Contact Section-->
-    <div id="contact">
-      <div class="container1">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-envelope"></i>donan.kd.bsinfotech@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>09554361348 / 09102189444</p>
-            
-            <div class="social-icons">
-              <a href="https://www.facebook.com/nneth.donan/"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/knnth_drl?t=ZKdXC3WG51FyZpsq2ecBGA&s=07"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/kd_nanskieee?igsh=MXdtZDllMXNxYzAwag=="><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="images/Donan_CV.pdf" download class="btn btn2">Download My CV</a>
+  <!--Services Section-->
+  <div id="services">
+    <div class="container1">
+      <h1 class="sub-title">What I Do?</h1>
+      <div class="services-list">
+
+        <div>
+          <ion-icon name="desktop-outline"></ion-icon>
+          <h2>Web Design</h2>
+          <p>Crafting engaging digital experiences through meticulous attention to detail. From seamless user
+            interactions to captivating visuals, each element is carefully designed to elevate user engagement and
+            reinforce brand identity.</p>
+          <h4>Active</h4>
+        </div>
+
+        <div>
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+          <h2>App Design</h2>
+          <p>Fusing creativity with functionality to deliver intuitive and visually appealing mobile experiences. Every
+            pixel is purposefully placed to enhance usability, simplify navigation, and delight users at every
+            touchpoint.</p>
+          <h4>Not Active</h4>
+        </div>
+
+        <div>
+          <ion-icon name="code-slash-outline"></ion-icon>
+          <h2>Backend</h2>
+          <p>Empowering applications with robust and scalable backend architecture. Leveraging cutting-edge
+            technologies, data management strategies, and security measures to ensure performance and reliability, even
+            under heavy loads.</p>
+          <h4>Not Active</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Works Section-->
+  <div id="portfolio">
+    <div class="container2">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/CafeLeanne.png" alt="Work 1" />
+          <div class="layer">
+            <h3>Cafe Leanne Reservation</h3>
+            <p> Enhance the dining experience at Cafe Leanne with our web-based reservation system, allowing customers
+              to book tables conveniently and ensuring a delightful culinary journey awaits them.</p>
+            <a href="#"><ion-icon name="exit-outline"></ion-icon></a>
           </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Name" required>
-              <input type="email" name="Email" placeholder="Email" required>
-              <textarea name="Message" rows="6" placeholder="Message"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
+        </div>
+
+        <div class="work">
+          <img src="images/Petcare.png" alt="Work 1" />
+          <div class="layer">
+            <h3>Pet Care App</h3>
+            <p>Simplify pet healthcare with our user-friendly app, allowing pet owners to effortlessly schedule vet
+              appointments, ensuring their furry friends receive timely and attentive care.</p>
+            <a href="#"><ion-icon name="exit-outline"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/Edtutor.png" alt="Work 1" />
+          <div class="layer">
+            <h3>EdTutor</h3>
+            <p>Empower students on their academic journey with Edtutor, an intuitive application that matches them with
+              qualified tutors, providing personalized learning experiences tailored to their unique needs and
+              schedules.</p>
+            <a href="#"><ion-icon name="exit-outline"></ion-icon></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="copyright">
-      <p>Copyright © 2024 
-        | Kenneth Darel<i class="fa-solid fa-heart"></i>
-      </p>
+  </div>
+
+  <!--Contact Section-->
+  <div id="contact">
+    <div class="container1">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><ion-icon name="mail"></ion-icon>donan.kd.bsinfotech@gmail.com</p>
+          <p><ion-icon name="call"></ion-icon>09554361348 / 09102189444</p>
+
+          <div class="social-icons">
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+          </div>
+          <a href="images/Donan_CV.pdf" download class="btn btn2">Download My CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <textarea name="Message" rows="6" placeholder="Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © 2024
+      | Kenneth Darel 🩵
+    </p>
+  </div>
 
 
-    <script>
-      var tablinks =  document.getElementsByClassName("tab-links");
-			var tabcontents = document.getElementsByClassName("tab-contents");
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-      function opentab(tabname){
-        for(tablink of tablinks){
-          tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-          tabcontent.classList.remove("active-tab");
-        }
-
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
       }
-    </script>
-    <script>
-      var side = document.getElementById("sidemenu")
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
 
-      function openmenu(){
-        side.style.right = "0";
-      }
-      function closemenu(){
-        side.style.right = "-200px";
-      }
-    </script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbz2uMr0C2nfoVOnhDY2dsD9qj944yI6b-MoLkiG55e-vmEn-39CRM1hSIPj7nln4v7K/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById("msg")
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML = "Message sent successfully."
-            setTimeout(function(){
-              msg.innerHTML = ""
-            },5000)
-            form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-  </body>
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
+  <script>
+    var side = document.getElementById("sidemenu")
+
+    function openmenu() {
+      side.style.right = "0";
+    }
+    function closemenu() {
+      side.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2uMr0C2nfoVOnhDY2dsD9qj944yI6b-MoLkiG55e-vmEn-39CRM1hSIPj7nln4v7K/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully."
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
